@@ -1,0 +1,2 @@
+import ClickCounter from "../components/ClickCounter";
+export default function Home(){return <div className="grid"><section className="panel"><p>DAY 06 · NEXT.JS APP ROUTER</p><h1>Build routes with a shared application shell.</h1><p>This starter demonstrates a root layout, page routes, nested routes, and a dynamic segment.</p><a className="btn" href="/courses">Explore courses</a></section><ClickCounter/></div>}

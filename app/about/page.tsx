@@ -1,0 +1,1 @@
+export default function About(){return <section className="panel"><h1>About EcoLearn</h1><p>A small learning portal demonstrating Next.js file-system routing and shared layout composition.</p></section>}

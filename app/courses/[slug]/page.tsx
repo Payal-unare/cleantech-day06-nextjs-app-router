@@ -1,0 +1,3 @@
+import {notFound} from "next/navigation";
+const details:Record<string,{title:string;description:string}>={react:{title:"React Foundations",description:"Components, props, state and reusable UI."},nextjs:{title:"Next.js App Router",description:"Layouts, pages, nested and dynamic routes."},api:{title:"REST API Basics",description:"Resources, HTTP methods and response codes."}};
+export default async function CourseDetail({params}:{params:Promise<{slug:string}>}){const {slug}=await params;const course=details[slug];if(!course)notFound();return <section className="panel"><p>COURSE DETAIL · DYNAMIC ROUTE</p><h1>{course.title}</h1><p>{course.description}</p><a href="/courses">← All courses</a></section>}

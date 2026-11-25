@@ -1,0 +1,2 @@
+const courses=[{slug:"react",title:"React Foundations",level:"Beginner"},{slug:"nextjs",title:"Next.js App Router",level:"Intermediate"},{slug:"api",title:"REST API Basics",level:"Beginner"}];
+export default function Courses(){return <><h1>Courses</h1><div className="grid">{courses.map(c=><article className="panel" key={c.slug}><h2>{c.title}</h2><p>{c.level}</p><a className="btn" href={`/courses/${c.slug}`}>View course</a></article>)}</div></>}
